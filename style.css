@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:wght@500&family=Trirong:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.game-board{
+    width: 100%;
+    height: 100%;
+    border-bottom: 50px solid #04a004;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#385dd8, #c4caff);
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    animation: pipe-animations 1.5 infinite linear;
+}
+.mario{
+    width: 130px;
+    position: absolute;
+    bottom: 0px;
+}
+.jump{
+    animation: mario-animation 500ms ease-out;
+}
+.cloud{
+    width: 500px;
+    position: absolute;
+    animation: cloud 20s infinite linear;
+}
+.game-over{
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(65, 57, 57, 0.363);
+}
+.restart{
+    height: 60px;
+    font-family: 'Trirong', serif;
+    margin-bottom: 250px;
+    width: 300px;
+    border-radius: none;
+    background-color: #385dd8;
+    cursor: pointeir;
+    color:#c4caff;
+    font-weight: bold;
+    transform: background-color 0.3;
+}
